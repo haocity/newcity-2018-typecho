@@ -61,6 +61,11 @@ if (!defined('__TYPECHO_ROOT_DIR__'))
 		
 		<div class="container-warp main-width">
 			<div class="container-right">
+				<div class="box search-box">
+					 <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
+                    	<input type="text" name="s" class="search-text" placeholder="<?php _e('输入关键字搜索'); ?>" />
+                	</form>
+				</div>
 				<div class="about-me box">
 					<div class="title">
 						<svg class="icon" aria-hidden="true"><use xlink:href="#icon-me"></use></svg>

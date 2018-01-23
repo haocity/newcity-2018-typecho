@@ -123,6 +123,25 @@ header>nav>.nav>li>a:after {
 	padding: 8px 10px;
 }
 
+.container-warp>.container-right>.box.search-box{
+	margin-bottom: 10px;
+	min-height: 0;
+}
+
+.container-warp>.container-right>.box.search-box>#search{
+	border-radius: 3px;
+    border: 1px solid #eee;
+    padding: 0 10px;
+}
+.container-warp>.container-right>.box.search-box>#search>.search-text{
+	width: 100%;
+    line-height: 2em;
+    font-size: 1.0em;
+    border: none;
+    outline:medium;
+    
+}
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;}
 .container-warp>.container>.post {
 	position: relative;
 	background-color: #FFFFFF;
