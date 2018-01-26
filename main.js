@@ -228,7 +228,6 @@ changermore();
 document.documentElement.scrollTop=0;
 document.querySelector('.nav-btn').addEventListener('click',function(){
 	let nav=document.querySelector('.nav')
-	console.log(nav)
 	if(!nav.a){
 		nav.a=true
 		nav.className='nav phone-nav'

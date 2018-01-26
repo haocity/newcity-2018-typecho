@@ -582,7 +582,9 @@ blockquote {
 	    right: -100%;
 		z-index: 40;
 	}
-
+	.container-warp>.container-right>.box{
+		box-shadow:initial
+	}
 	.container-warp>.container>.post>.post-showall-btn {
 		display: none;
 	}
