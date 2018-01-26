@@ -1,3 +1,4 @@
+
 let city = new Object;
 document.addEventListener('DOMContentLoaded',function(){
 //console.log("ok")
@@ -223,14 +224,38 @@ function changerurl(title,newUrl){
 }
 
 
-
 changermore();
 document.documentElement.scrollTop=0;
-document.querySelector('.nav-btn').addEventListener('touchstart',function(){
+document.querySelector('.nav-btn').addEventListener('click',function(){
 	let nav=document.querySelector('.nav')
-	if(nav.style.display!='block'){
-		nav.style.display=='block'
+	console.log(nav)
+	if(!nav.a){
+		nav.a=true
+		nav.className='nav phone-nav'
+	}else{
+		nav.a=false
+		nav.className='nav'
 	}
+})
+document.querySelector('.phone-show-right').addEventListener('click',function(){
+	document.querySelector('.nav-btn').click()
+	let ele= document.querySelector('.container-right')
+	if(!ele.a){
+		ele.a=true
+		ele.style.display='block'
+		clearTimeout(ele.t)
+		setTimeout(function(){
+			ele.style.right='0'
+		},0)
+	}else{
+		ele.a=false
+		ele.style.right='-100%'
+		ele.t=setTimeout(function(){
+			ele.style.display='none'
+		},1000)
+	}
+	
 })
 
 })
+

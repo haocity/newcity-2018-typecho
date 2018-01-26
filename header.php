@@ -54,6 +54,7 @@ if (!defined('__TYPECHO_ROOT_DIR__'))
 			<?php while($pages->next()): ?>
                <li><a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a></li>
             <?php endwhile; ?>
+            <li class="phone-show-right"><a href="JavaScript:;">侧边栏</a></li>
 		</div>
 		<div class="nav-btn"><div class="bar1"></div><div class="bar1"></div><div class="bar1"></div></div>
 	</nav>

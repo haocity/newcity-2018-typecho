@@ -81,7 +81,9 @@ header>nav>.nav>li {
 	float: left;
 	list-style: none;
 }
-
+header>nav>.nav>.phone-show-right{
+	display: none;
+}
 header>nav>.nav>li>a, header>nav>.logo>a {
 	position: relative;
 	display: inline-block;
@@ -553,6 +555,9 @@ blockquote {
 		float: initial;
 		border-top: 1px solid #fbfbfb;
 	}
+	header>nav>.nav>.phone-show-right{
+		display: block;
+	}
 	.container-warp>.container>.post>.small{
 		font-size: 16px;
 		line-height: 22px;
@@ -564,9 +569,20 @@ blockquote {
 	.container-warp>.container>.post{
 		padding: 8px 15px;
 	}
-	.container-right {
+	.container-warp>.container-right {
 		display: none;
+		float: initial;
+		transition: all 1s;
+		-moz-transition: all 1s;	
+		-webkit-transition: all 1s;
+		position: fixed;
+		background-color: #fff;
+		height: 100%;
+	    top: 60px;
+	    right: -100%;
+		z-index: 40;
 	}
+
 	.container-warp>.container>.post>.post-showall-btn {
 		display: none;
 	}
