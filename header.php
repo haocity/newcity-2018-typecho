@@ -55,6 +55,7 @@ if (!defined('__TYPECHO_ROOT_DIR__'))
                <li><a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a></li>
             <?php endwhile; ?>
 		</div>
+		<div class="nav-btn"><div class="bar1"></div><div class="bar1"></div><div class="bar1"></div></div>
 	</nav>
 </header>
 <!-- end #header -->

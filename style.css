@@ -495,7 +495,7 @@ blockquote {
 .page-navigator a{display:inline-block;padding:0 10px;height:30px;line-height:1.875rem;text-decoration: none;color: #727a86;}
 .page-navigator a:hover{background:#eee;text-decoration:none}
 .page-navigator .current a{background:#eee;color:#444}
-@media only screen and (min-width:300px) and (max-width:700px) {
+@media only screen and (max-width: 700px) and (min-width: 300px) {
 	.main-width {
 		width: 90%;
 	}
@@ -508,6 +508,50 @@ blockquote {
 	}
 	.container{
 		margin-top: 64px;
+	}
+	header>nav{
+		overflow: initial;
+	}
+	
+	header>nav>.nav{
+		display: none;
+	}
+	header>nav>.nav>li>a{
+		color: #464545;
+	}
+
+	header>nav>.nav-btn {
+		display: block;
+		width: 30px;
+		border: 1px solid #fff;
+		border-radius: 5px;
+		position: absolute;
+		right: 10px;
+		top: 12px;
+		background-color: #bfbfbf;
+		
+	}
+	
+	header>nav>.nav-btn>.bar1 {
+		margin: 5px;
+		width: 20px;
+		height: 3px;
+		background-color: #fff
+	}
+	header>nav>.phone-nav{
+		position: fixed;
+		background-color: #ffffff;
+		display: block;
+		text-align: center;
+		top: 58px;
+		right: 10px;
+		border: 1px solid #dedede;
+		border-top-width: 0px;
+		border-radius: 0 0 12px 12px;
+	}
+	header>nav>.phone-nav>li{
+		float: initial;
+		border-top: 1px solid #fbfbfb;
 	}
 	.container-warp>.container>.post>.small{
 		font-size: 16px;

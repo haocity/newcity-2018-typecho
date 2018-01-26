@@ -226,4 +226,11 @@ function changerurl(title,newUrl){
 
 changermore();
 document.documentElement.scrollTop=0;
+document.querySelector('.nav-btn').addEventListener('touchstart',function(){
+	let nav=document.querySelector('.nav')
+	if(nav.style.display!='block'){
+		nav.style.display=='block'
+	}
+})
+
 })
