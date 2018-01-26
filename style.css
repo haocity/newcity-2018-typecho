@@ -131,7 +131,9 @@ header>nav>.nav>li>a:after {
 .container-warp>.container-right>.box.search-box>#search{
 	border-radius: 3px;
     border: 1px solid #eee;
-    padding: 0 10px;
+    padding: 0 0 0 40px;
+    background: transparent url(img/icon-search@2x.png) no-repeat 4px center;
+	background-size: 29px;
 }
 .container-warp>.container-right>.box.search-box>#search>.search-text{
 	width: 100%;
@@ -496,6 +498,16 @@ blockquote {
 @media only screen and (min-width:300px) and (max-width:700px) {
 	.main-width {
 		width: 90%;
+	}
+	/*nav*/
+	header{
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 99;
+	}
+	.container{
+		margin-top: 64px;
 	}
 	.container-warp>.container>.post>.small{
 		font-size: 16px;
