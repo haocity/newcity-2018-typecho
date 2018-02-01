@@ -76,7 +76,7 @@ document.querySelector('.container').addEventListener('click',
 //滚动
 if(srollopen){
 	document.addEventListener('scroll', function() {
-		if(document.documentElement.clientHeight + document.documentElement.scrollTop >= document.body.offsetHeight-10) {
+		if(document.documentElement.clientHeight + (document.documentElement.scrollTop||document.body.scrollTop ) >= document.body.offsetHeight-10) {
 			if(!city.isload&&city.pagenav&&city.pagenav.next){
 				console.log("加载下一页");
 				city.isload=true;
