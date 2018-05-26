@@ -3,6 +3,7 @@ if (!defined('__TYPECHO_ROOT_DIR__'))
 	exit ;
  ?>
 <?php if (!isajax()) { ?>
+
 <!DOCTYPE HTML>
 <html class="no-js">
 <head>
@@ -11,15 +12,15 @@ if (!defined('__TYPECHO_ROOT_DIR__'))
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php $this -> archiveTitle(array('category' => _t('分类 %s 下的文章'), 'search' => _t('包含关键字 %s 的文章'), 'tag' => _t('标签 %s 下的文章'), 'author' => _t('%s 发布的文章')), '', ' - '); ?><?php $this -> options -> title(); ?></title>
-	<script src="https://at.alicdn.com/t/font_464467_n309tpndqj6vfgvi.js" async="async" type="text/javascript" charset="utf-8"></script>
+	<script src="https://at.alicdn.com/t/font_464467_5vpkyaenyuy2e29.js" async="async" type="text/javascript" charset="utf-8"></script>
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
     <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="<?php $this -> options -> themeUrl('style.css'); ?>">
-	<script  src="<?php $this -> options -> themeUrl('min.js'); ?>"   type="text/javascript" charset="utf-8"></script>
-	<script src="<?php $this -> options -> themeUrl('hco.js'); ?>" type="text/javascript" charset="utf-8"></script>
+	<script  src="<?php $this -> options -> themeUrl('min.js'); ?>?time=1837"   type="text/javascript" charset="utf-8"></script>
+	<script src="<?php $this -> options -> themeUrl('hco.js'); ?>?time=1837" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		optionstitle="<?php $this->options->title() ?>"
 		<?php if ($this->options->srollSet == 'able'){ 

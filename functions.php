@@ -77,7 +77,7 @@ function showThumbnail($widget)
     // 当文章无图片时的默认缩略图
     $rand = rand(1,4999); 
     // 随机 n张缩略图
-    $random = 'http://imgcdn.haotown.cn/img/bj@' . $rand . '.jpg?imageMogr2/thumbnail/300x/format/webp/interlace/0/quality/100|imageMogr2/gravity/center/crop/300x169'; // 随机缩略图路径
+    $random = 'https://oneimg.haotown.cn/400/bj@' . $rand . '.jpg'; // 随机缩略图路径
     if(Typecho_Widget::widget('Widget_Options')->slimg && 'Showimg'==Typecho_Widget::widget('Widget_Options')->slimg){
       $random = $widget->widget('Widget_Options')->themeUrl . '/img/mr.png'; //无图时只显示固定一张缩略图
     }

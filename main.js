@@ -70,6 +70,28 @@ document.querySelector('.container').addEventListener('click',
 				city.share.style.top = e.clientY + document.documentElement.scrollTop - 20 + 'px'
 				city.share.style.left = e.clientX + document.documentElement.scrollLeft - 20 + 'px'
 				city.share.style.display = 'block'
+			}else if(ele.classList.contains("post-bottom-tts")){
+				//朗读
+				if(!ele.audio){
+					ele.audio=new Audio()
+					const con=ele.parentNode.parentNode.querySelector('.con')||ele.parentNode.parentNode.querySelector('.post-con')
+					let text=con.innerText
+					let xmlhttp=new XMLHttpRequest()
+					xmlhttp.onreadystatechange=function(){
+						if (xmlhttp.readyState==4 && xmlhttp.status==200){
+							let a=xmlhttp.responseText
+							ele.audio.src=a
+							ele.appendChild(ele.audio)
+							ele.audio.play()
+						}
+					}
+					xmlhttp.open("GET","https://api.haotown.cn/tts/?text="+text,true);
+					xmlhttp.send();
+					
+				}else{
+					ele.audio.play()
+				}
+				
 			}
 		}
 	})
@@ -85,6 +107,8 @@ if(srollopen){
 		}
 	})
 }
+
+
 
 city.copy.t.addEventListener('click',function(){
 	this.select();
@@ -220,6 +244,9 @@ function changerurl(title,newUrl){
 	try{
 		history.pushState(stateObject,title,newUrl);
 	}catch(e){console.log("你的浏览器过时了！")}
+	if(window._hmt&&window._hmt.push){
+		_hmt.push(['_trackPageview', location.href]);
+	}
 	document.title=title;
 }
 

@@ -497,7 +497,7 @@ blockquote {
 .page-navigator a{display:inline-block;padding:0 10px;height:30px;line-height:1.875rem;text-decoration: none;color: #727a86;}
 .page-navigator a:hover{background:#eee;text-decoration:none}
 .page-navigator .current a{background:#eee;color:#444}
-@media only screen and (max-width: 700px) and (min-width: 300px) {
+@media only screen and (max-width:1200px) and (min-width: 300px) {
 	.main-width {
 		width: 90%;
 	}
@@ -604,17 +604,31 @@ blockquote {
 	}
 }
 
-@media only screen and (min-width:700px) and (max-width:1200px) {
+@media only screen and (min-width:1200px) and (max-width:1600px) {
 	.main-width {
 		width: 90%;
 	}
+	.container-warp>.container>.post>.small>.simg {
+    	width: 180px;
+    }
+    .container-warp>.container>.post{
+    	    padding: 8px ;
+    }
+    .container-warp>.container>.post .post-con-main>.title{
+    	font-size: 25px;
+    }
+    .container-warp>.container>.post .post-con-main>.con {
+	    position: relative;
+	    font-size: 18px;
+	    line-height: 25px;
+	}
+	.container-warp>.container>.post>.post-con>p.more>a {
+	    text-decoration: none;
+	    font-size: 18px;
+	}
+
 }
 
-@media only screen and (min-width:1400px) {
-	.main-width {
-		width: 1200px;
-	}
-}
 
 @media only screen and (min-width:1600px) {
 	.main-width {

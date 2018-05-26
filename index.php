@@ -59,6 +59,12 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 			</svg>
 			分享
 		</div>
+		<div class="post-bottom-tts pointer">
+			<svg class="icon" aria-hidden="true">
+				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-maikefeng"></use>
+			</svg>
+			朗读
+		</div>
 	</div>
 	<div class="post-ex"></div>
 </div>
